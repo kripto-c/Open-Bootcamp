@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: row-reverse;
+    height:100vh;
+    background:#999;
+}
+
+.seccion-principal{
+    flex-grow:3;
+    padding:10px;
+}
+
+.lateral-izquierda{ 
+    width:100%;
+    background:rgb(223, 98, 98);
+    padding:20px;
+}
+@media (max-width:640px){
+  .container{
+     display: block;
+  }
+  .lateral-izquierda{
+    width:100%;
+   display: flex;
+   justify-content: space-around;
+  }
+}
